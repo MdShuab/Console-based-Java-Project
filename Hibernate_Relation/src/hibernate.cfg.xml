@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+          "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+
+<hibernate-configuration>
+
+    <session-factory>
+       <property name="connection.username">root</property>
+		<property name="connection.password">incapp</property>
+		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="connection.url">jdbc:mysql://localhost:3306/relation_assignment</property>
+		<property name="hbm2ddl.auto">update</property>
+		<property name="show_sql">true</property>
+		
+	<!-- 	 OneToOne 
+		<mapping class="com.shuaib.hibernateRelation.Demo1DTO"/>
+        <mapping class="com.shuaib.hibernateRelation.Demo2DTO"/>
+        
+         <mapping class="com.shuaib.onetoOne.Car"/>
+         <mapping class="com.shuaib.onetoOne.Engine"/>
+         
+         OneToMany
+         <mapping class="com.shuaib.OneToMany.Faculty"/>
+		<mapping class="com.shuaib.OneToMany.Student"/>
+		
+         
+          ManyToOne
+         
+          <mapping class="com.shuaib.ManyToOne.CompanyDTO"/>
+		  <mapping class="com.shuaib.ManyToOne.EmployeDTO"/>
+        
+        ManyToMany
+       
+        <mapping class="com.shuaib.ManyToMany.VendorDTO"/>
+		  <mapping class="com.shuaib.ManyToMany.CustomerDTO"/>
+		  
+		  -->
+		  <!-- Assignment -->
+		  <mapping class="com.shuaib.Assignment.MovieDTO"/>
+		  <mapping class="com.shuaib.Assignment.DirectorDTO"/>
+		   <mapping class="com.shuaib.Assignment.ActorDTO"/>
+		 
+		 
+        
+        
+    </session-factory>
+
+</hibernate-configuration>

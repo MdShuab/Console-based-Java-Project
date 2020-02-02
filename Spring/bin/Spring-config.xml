@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation=" http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+<!-- <bean class="com.shuaib.spring.MyBean">
+<property name="id" value="123"></property>
+<property name="name" value="Shuaib"></property>
+<constructor-arg value="123"/>
+<constructor-arg value="Shuaib"/>
+</bean> -->
+<!-- <bean id="en1" class="com.shuaib.spring1.Engine1">
+<property name="ename1" value="Power"></property>
+</bean>
+
+<bean id="en2" class="com.shuaib.spring1.Engine2">
+<property name="ename2" value="Turbo"></property>
+</bean>
+
+<bean  class="com.shuaib.spring1.Car">
+<property name="cname" value="Maruti800"></property>
+<property name="e" ref="en1"></property> -->
+<!-- </bean> -->
+
+
+
+ <!-- Mapping using autowire by byName -->
+<!-- <bean id="e" class="com.shuaib.spring1.Engine1">
+<property name="ename1" value="Power"></property>
+</bean>
+<bean class="com.shuaib.spring1.Car" autowire="byName">
+<property name="cname" value="Maruti800"></property>
+</bean> -->
+
+
+
+
+<!--  Mapping using autowire by byType -->
+<!-- <bean  class="com.shuaib.spring1.Engine1">
+<property name="ename1" value="Power"></property>
+</bean>
+<bean class="com.shuaib.spring1.Car" autowire="byType">
+<property name="cname" value="Maruti800"></property>
+</bean> -->
+
+<!--  Mapping using autowire by contructor -->
+<!-- <bean  id="e" class="com.shuaib.spring1.Engine1">
+<property name="ename1" value="Power"></property>
+</bean> -->
+<!-- <bean  class="com.shuaib.spring1.Engine1">
+<property name="ename1" value="Turbo"></property>
+</bean> -->
+<!-- <bean class="com.shuaib.spring1.Car" autowire="constructor">
+<property name="cname" value="Maruti800"></property>
+</bean> -->
+
+
+<!-- Mapping by using base package -->
+
+<context:component-scan base-package="com.shuaib.spring1"></context:component-scan>
+
+
+
+</beans>
